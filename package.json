@@ -39,6 +39,7 @@
     "git": "^0.1.5",
     "http-errors": "^2.0.0",
     "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.9.0",
     "mongoose": "^8.6.3"
   }
 }
