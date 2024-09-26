@@ -51,12 +51,15 @@ try {
      {expiresIn: "7d",})
 
   //Response
-  res.json({ 
+  res.status(201).json({ 
     accessToken: token
   });
 } catch (err) {
   return next(createHttpError(500, "Error while signing the jwt token"))
 }
 };
+const loginUser = async (req: Request, res: Response, next: NextFunction)=>{
+  res.json({message: "OK"})
+}
 
-export { createUser };
+export { createUser, loginUser };
