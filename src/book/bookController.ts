@@ -5,6 +5,9 @@ const createBook=async(
     res: Response,
     next: NextFunction
 )=>{
+
+    const{}=req.body;
+
     res.json({});
 };
 
